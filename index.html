@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAMPX | Explore Beyond</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f6f5ef; color: #24352a; line-height: 1.6; }
+header { background: #173b2b; color: white; padding: 22px 7%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+.logo { font-size: 30px; font-weight: bold; letter-spacing: 3px; }
+.tagline { font-size: 11px; letter-spacing: 2px; color: #d8dfc8; }
+nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 14px; }
+.hero { min-height: 480px; padding: 100px 7%; display: flex; align-items: center; background: linear-gradient(90deg, rgba(10,30,20,.85), rgba(10,30,20,.2)), url("https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat; color: white; }
+.hero-content { max-width: 650px; }
+.hero h1 { font-size: clamp(42px, 7vw, 76px); line-height: 1.1; margin-bottom: 22px; }
+.hero p { font-size: 18px; margin-bottom: 30px; }
+.button { display: inline-block; background: #d8a653; color: #172d20; padding: 13px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; border: none; cursor: pointer; }
+.section { padding: 65px 7%; }
+.section-title { font-size: 34px; margin-bottom: 10px; }
+.section-description { color: #68756b; margin-bottom: 30px; }
+.categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 18px; margin-bottom: 20px; }
+.category { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,.05); }
+.category h3 { margin-bottom: 8px; }
+.trips { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; }
+.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,.08); }
+.card img { width: 100%; height: 230px; object-fit: cover; display: block; }
+.card-content { padding: 23px; }
+.label { color: #68834f; font-size: 12px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+.card h3 { font-size: 24px; margin: 8px 0; }
+.card p { color: #68756b; margin-bottom: 15px; }
+.details { margin: 15px 0; font-size: 14px; }
+.details div { margin: 7px 0; }
+.card .button { margin-top: 8px; }
+.about { background: #e8ebdf; }
+.about p { max-width: 750px; margin-top: 15px; }
+.contact { background: #173b2b; color: white; text-align: center; }
+.contact p { margin: 15px 0 25px; }
+footer { background: #10291d; color: #d8dfc8; text-align: center; padding: 25px 15px; font-size: 13px; }
+@media (max-width: 600px) {
+  header { padding: 20px 5%; }
+  nav { width: 100%; }
+  nav a { margin: 0 12px 0 0; }
+  .hero { padding: 75px 6%; min-height: 420px; }
+  .section { padding: 45px 6%; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="logo">CAMPX</div>
+    <div class="tagline">ENDLESS MOMENTS, INFINITE MEANINGS</div>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#trips">Explore Trips</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Explore Beyond<br>the Ordinary.</h1>
+    <p>From the hidden trails of Kerala to unforgettable international journeys, discover experiences that bring people and places together.</p>
+    <a href="#trips" class="button">EXPLORE OUR TRIPS</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Find Your Kind of Adventure</h2>
+  <p class="section-description">Every journey has a story. Find yours with CAMPX.</p>
+  <div class="categories">
+    <div class="category"><h3>🏕️ Camping</h3><p>Campfires, nature and unforgettable nights.</p></div>
+    <div class="category"><h3>🥾 Trekking</h3><p>Discover trails, mountains and hidden places.</p></div>
+    <div class="category"><h3>🧭 Domestic Trips</h3><p>Explore incredible destinations across India.</p></div>
+    <div class="category"><h3>✈️ International</h3><p>Discover new countries, cultures and experiences.</p></div>
+  </div>
+</section>
+
+<section class="section" id="trips">
+  <h2 class="section-title">Featured Experiences</h2>
+  <p class="section-description">Your next adventure starts here.</p>
+  <div class="trips">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=85" alt="Nature and mountains">
+      <div class="card-content">
+        <div class="label">Camping Experience</div>
+        <h3>Vattavada Camp</h3>
+        <p>Escape into the beautiful landscapes of Vattavada and experience nature, adventure and unforgettable moments with CAMPX.</p>
+        <div class="details">
+          <div>📍 Vattavada, Munnar, Kerala</div>
+          <div>🌲 Nature and Forest Experiences</div>
+          <div>🔥 Campfire and Group Activities</div>
+          <div>📅 Upcoming Camp — Contact Us for Dates</div>
+        </div>
+        <a href="#contact" class="button">ENQUIRE NOW</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Mountain adventure">
+      <div class="card-content">
+        <div class="label">Adventure Travel</div>
+        <h3>Mountain Escapes</h3>
+        <p>Discover breathtaking mountain destinations, scenic trails and memorable outdoor adventures.</p>
+        <div class="details">
+          <div>🏔️ Mountain Destinations</div>
+          <div>🥾 Trekking and Exploration</div>
+          <div>📅 Upcoming Experiences</div>
+        </div>
+        <a href="#contact" class="button">ENQUIRE NOW</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85" alt="Travel and exploration">
+      <div class="card-content">
+        <div class="label">International Travel</div>
+        <h3>Explore the World</h3>
+        <p>Experience new cultures, incredible destinations and exciting journeys beyond borders.</p>
+        <div class="details">
+          <div>✈️ International Destinations</div>
+          <div>🌍 Unique Travel Experiences</div>
+          <div>📅 Trip Details Coming Soon</div>
+        </div>
+        <a href="#contact" class="button">ENQUIRE NOW</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <h2 class="section-title">Travel Beyond Boundaries</h2>
+  <p>CAMPX is built around the joy of discovering new places, meeting new people and creating meaningful experiences. From outdoor camping and trekking to domestic and international travel, we bring people together through journeys worth remembering.</p>
+  <p>Endless Moments, Infinite Meanings.</p>
+</section>
+
+<section class="section contact" id="contact">
+  <h2 class="section-title">Your Next Journey Awaits</h2>
+  <p>Interested in a CAMPX experience? Contact us to learn about upcoming trips and availability.</p>
+  <!-- Replace 91XXXXXXXXXX with your WhatsApp number, including country code and without the + sign. -->
+  <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20CAMPX%2C%20I%20would%20like%20to%20know%20about%20your%20upcoming%20trips." class="button" target="_blank" rel="noopener noreferrer">CHAT WITH US ON WHATSAPP</a>
+</section>
+
+<footer>
+  <p>CAMPX — Endless Moments, Infinite Meanings.</p>
+  <p>Adventure. Explore. Experience.</p>
+  <p>&copy; 2026 CAMPX. All rights reserved.</p>
+</footer>
+</body>
+</html>
